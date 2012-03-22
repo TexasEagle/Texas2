@@ -77,7 +77,7 @@ h5{
 /*Navigation =================================================================*/
 nav{
 	font-family: 'Quicksand', sans-serif;
-	font-size: 18px;
+	font-size: 1.125em; /* 18px */
 	text-shadow: 2px 2px 2px #000;
 	display: inline;
 	list-style: none;
@@ -173,13 +173,13 @@ input{
         -moz-box-shadow:5px 5px 5px #666;
         -webkit-box-shadow:5px 5px #666;
         box-shadow:5px 5px #666;
-        padding: 5px;
+        padding: 0.313em; /* 5px */
         box-sizing: content-box;
         }
         
 textarea {
-    /*box-sizing: border-box;*/
-    box-sizing: content-box: 
+    
+    box-sizing: content-box; 
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
    }
@@ -193,18 +193,19 @@ cellspacing: 2;}
 
 caption{
 	font-size: 1.5em; /* 20px */
+	font-family: 'Quicksand',sans-serif;
 	color: red;
 }
 
 table{
     border-collapse: collapse;
     color: black;
-    padding: 0.3em;
+    padding: 0.313em; /* 5px */
     display: inline;
 }
 
 td{
-    padding: 0.3em;
+    padding: 0.313em; /* 5px */
     width: 10%;
     border: inset;
     }
@@ -213,7 +214,7 @@ th{
     background-color:#E6E6FA;
     color:black;
     width: 20%; /*25.4%*/
-    padding: 0.3em;
+    padding: 0.313em; /* 5px */
     border: inset;
     }
 
@@ -259,9 +260,10 @@ footer{
 	@media screen and (max-width: 479px){
 	section{float:right;}
     ol li{max-width: 100%;}
-    h1{text-align: center;}
-    h3,h4,h5{display: none;}
+    h1,h3{text-align: center;}
+    h4,h5{display: none;}
     ul{list-style: none; padding:0;}
     img{max-width: 25%;}
-    table{max-width: 10%;}
+    table{display: none;}
+    form{display: none;}
 }
