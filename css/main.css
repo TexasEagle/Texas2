@@ -1,269 +1,144 @@
-body{
-	background-image: url(images/texasbackground.gif);
+
+body {
+	font: 100%/1.5 Verdana, Arial, Helvetica, sans-serif;
+	background-image: url(../images/tropical_background.jpg);
 	background-attachment: fixed;
-	font: 100%/1.5 'Quicksand', sans-serif;
-	max-width: 960px;
-	text-align: center;
-	margin: 0 auto;
-	}
-
-#wrapper{
-    width: 100%; /* 900px */
-    margin: 0 auto;
-    overflow: hidden;
-    border: 2px solid #424242;
-    background-image: url(images/burnt_brown.jpg);
-
+	max-width: 1024px;
+	max-height: 768px;
+	padding: 0;
+	margin-left: 14%;
+	margin_right: auto;
 }
 
-/* All Images */
-img{
-    max-width: 100%
+.logo{
+	float:left;
+	border-style:solid;
+	border-width:1px 2px 1px 1px;
+	max-heigth: 100%;
 }
 
-/* Headings =================================================================*/
-/* Main */
-h1{
-	font-family: 'Diplomata', cursive;
-	color: #FF0000;
-	text-align: center;
-	text-shadow: 2px 2px 2px #000;
+.header{
 	float: right;
-	margin-right: 26.666667%; /* 240px/900px */
-	}
-	
-/* Image and Paragraph Headers */
-h3{
-	margin-bottom: 5px;
-	color: #FF0000; /* Red */
-	text-shadow: 2px 2px 2px #000;
-	float: none;
-	}
-
-/* Texas Map */	
-h4{
-	border-radius:10px;
-	-moz-box-shadow:5px 5px 5px #666;
-	-webkit-box-shadow:5px 5px #666;
-	background: -moz-linear-gradient(top, #5F9EA0 0%, #A9A9A9 80%);
-	text-shadow: 2px 2px 2px #000;
-	font-size: 1em; /* 16px */
-	width: 22.222222%; /* 200px/900px */
-	margin-left: 38.333333%; /* 345px/900px */
-	margin-top: 25px;
-	padding: .025%; /* 5px/200px */
-	display: inline;
-	display: block;
+	border-style:solid;
+	border-width:1px 2px;
 }
 
-/* Call To Action */
-h5{
-    border-radius:10px;
-    -moz-box-shadow:5px 5px 5px #666;
-    -webkit-box-shadow:5px 5px #666;
-    background: -moz-linear-gradient(top, #5F9EA0 0%, #A9A9A9 80%);
-    opacity: 0.8;
-    text-shadow: 2px 2px 2px #000;
-    font-family: 'Quicksand',sans-serif;
-    font-size: 1.125em; /* 18px */
-    width: 27.777778%; /* 250px/900px */
-    margin-left: 35.555556%; /* 320px/900px */
-    margin-top: 25px;
-    padding: .025%; /* 5px/200px */
-    display: inline;
-    display: block;
-}
-	
-/*Navigation =================================================================*/
-nav{
-	font-family: 'Quicksand', sans-serif;
-	font-size: 1.125em; /* 18px */
-	text-shadow: 2px 2px 2px #000;
-	display: inline;
-	list-style: none;
-	text-align: center;
-	width: 55.555556%; /* 500px/900px */
-	margin: 1.6666667%; /* 15px/900px */
+.google{
+	margin-left: 200px;
 	}
 	
-.nav li{
-	width: 55.555556%; /* 500px/900px */
-	display: inline;
-	}
-	
-a:link{
-		color=#FF0000;;
-		}
-		
-a:visited{
-		color=#800080;
-		}
-
-a:hover{
-	   background: #CD853F;
-	   }
-	   
-a:active{
-		color=#000000;
-		}
-
-/* Restaurants List===============================================================*/
-ol li{
-	list-style-type: none;
-	display: inline;
-	}
-	
-ol li img{border:2px solid #333;
+img{
 	max-width: 100%;
-	}
-	
-/* Paragraphs ================================================================*/	
-p{
-	color: #000000;
-	margin: auto;
-	width: 91.666666%; /* 815px/900px */
-	padding: 1.4285714%; /* 10px/700px */
-	border: 2px solid #333;
-	background-color: #fff;
-	opacity: 0.8;
+	max-height: 100%;
+}
+
+nav{
+	color: #0000FF;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2{
+font-family: 'Nunito', sans-serif;
+margin-left: 25px;
+color: #000080;
+text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+
+
+p {
+	margin-top: 0;
+	padding-right: 80px;
+	padding-left: 15px;
+}
+
+}
+
+/* Nav Links */
+a:link {
+	color:#0000FF;
+	text-decoration: underline;
+	margin-right: 30px;
+}
+
+a:visited {
+	color: #00FF00;
+	text-decoration: underline;
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+.container {
+	width: 100%;
+	max-width: 1024px;
+	min-width: 460px;
+	background: -moz-linear-gradient(left, #DCDCDC 100%, #DCDCDC 100%);  /*#DCDCDC*/
+	padding: 10px 0;
+	height: 147px;
+}
+
+.content {
+	padding: 5px 0;
+	font-family: 'arial', sans-serif;
+	font-size: 100%;
 	border-radius: 10px;
-	}
-				
-section{
-	-moz-column-count: 3;
-	-webkit-column-count: 3;
-	text-align: center;
-	}
+    -moz-box-shadow: 5px 5px 5px #666;
+    -webkit-box-shadow: 5px 5px #666;
+    background: -moz-linear-gradient(top right, #00FA9A 10%, #FFFAFA 80%);
+    opacity: 0.9;
+    text-align: left;
+	width: 100%;
+}
 
-/* Gallery: Places of Interest ===============================================*/
-.gallery li{
-	text-align: center;
-	display: inline;
-	}
+/*.content ul, .content ol { 
+	padding: 0 15px 15px 40px;
 	
-.gallery li img{
-    border:2px solid #333;
-    max-width: 100%;
-    overflow: hidden;
-    }
-    
-ul{
-    margin: 2.7777778%; /* 25px/900px */
-    list-style: url("images/star-of-texas.jpg");
-    padding:0;
-    }
-
-/*Form  ========================================================================================*/
-input{
-    background-color: #E6E6FA;
-    }
+}*/
 
 .form{
-        float: left;
-        width: 30%;
-        display: inline;
-        text-align: left;
-        margin-bottom: 15px;
-        margin-left: 33.888889%; /* 305px/900px */
-        color: #FF0000;
-        text-shadow: 2px 2px 2px #000;
-        border: .4% solid #333; /* 2px */
-        border-radius: 10px;
-        background-color: #F0F8FF;
-        -moz-box-shadow:5px 5px 5px #666;
-        -webkit-box-shadow:5px 5px #666;
-        box-shadow:5px 5px #666;
-        padding: 0.313em; /* 5px */
-        box-sizing: content-box;
-        }
-        
-textarea {
-    
-    box-sizing: content-box; 
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-   }
-   
-/* Table of Chefs ===========================================================================*/
-table td th
-
-TABLE.collapse
-{border-collapse: collapse;
-cellspacing: 2;}
-
-caption{
-	font-size: 1.5em; /* 20px */
-	font-family: 'Quicksand',sans-serif;
-	color: red;
+    width: 100%;
+    margin-right: 20px;
+    padding: 10px 10px 10px 10px;
 }
-
-table{
-    border-collapse: collapse;
-    color: black;
-    padding: 0.313em; /* 5px */
-    display: inline;
-}
-
-td{
-    padding: 0.313em; /* 5px */
-    width: 10%;
-    border: inset;
-    }
-
-th{
-    background-color:#E6E6FA;
-    color:black;
-    width: 20%; /*25.4%*/
-    padding: 0.313em; /* 5px */
-    border: inset;
-    }
-
-tr{
-    border-collapse: collapse;
-    }
     
-.even{
-    background: #C0C0C0;
-    }
-
-.odd{
-    background: #9999ff;
-   }
-            
-/* Footer ====================================================================*/
-footer{
-	color: #000;
-	margin: 2.77777778% /* 25px/900px */
+attractions{
+	display: inline;
 	}
-
-/* Media Queries ============================================================*/
-
-	/* Tablet Portrait Size to standard 960 (devices and browsers) */
-	@media screen and (min-width: 768px) and (max-width: 959px){
-	#wrapper{width: auto;}
-	section{-moz-column-count: 3; -webkit-column-count: 3; text-align: center;}
-	img{max-width: 100%}
-}	
-
-		
-	/* Mobile Landscape to Tablet Portrait (devices and browsers) */
-	@media screen and (min-width: 480px) and (max-width: 767px){
 	
-	#wrapper{width: auto;}
-	h4,h5{display: none;}
-	section{float:left;}
-	ol li{max-width: 100%;}
-	form{max-width: 100%;}		
+/* ~~ The footer ~~ */
+.footer {
+	padding: 5px 0;
+	background: #000000;
+	text-align: center;
+	color: #fff;
 }
 
-	/* Mobile Portrait to Mobile Landscape (devices and browsers) */
-	@media screen and (max-width: 479px){
-	section{float:right;}
-    ol li{max-width: 100%;}
-    h1,h3{text-align: center;}
-    h4,h5{display: none;}
-    ul{list-style: none; padding:0;}
-    img{max-width: 25%;}
-    table{display: none;}
-    form{display: none;}
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {
+	float: right;
+	margin-left: 0px;
+	color: #0000FF;
 }
+
+.fltlft {
+	float: left;
+	margin-right: 8px;
+	color: #0000FF;	
+}
+
+.clearfloat {
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+</style>
