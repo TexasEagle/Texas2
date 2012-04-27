@@ -32,15 +32,11 @@ img{
 	max-height: 100%;
 }
 
-nav{
-	color: #0000FF;
-}
-
 /* ~~ Element/tag selectors ~~ */
-ul, ol, dl {
+/*ul, ol, dl {
 	padding: 0;
 	margin: 0;
-}
+}*/
 
 h1, h2{
 font-family: 'Nunito', sans-serif;
@@ -55,25 +51,45 @@ p {
 	margin-top: 0;
 	padding-right: 80px;
 	padding-left: 15px;
+	
 }
 
 }
 
-/* Nav Links */
-a:link {
-	color:#0000FF;
-	text-decoration: underline;
-	margin-right: 30px;
-}
+/*Navigation =================================================================*/
+nav{
+	font-family: 'arial', sans-serif;
+	font-size: 1.125em; /* 18px */
+	text-shadow: 2px 2px 2px #000;
+	display: inline;
+	list-style: none;
+	text-align: center;
+	width: 55.555556%; /* 500px/900px */
+	/*margin: 1.6666667%; /* 15px/900px */
+	/*margin-bottom: 1.6666667%*/
+	}
+	
+.nav li{
+	/*width: 55.555556%;*/ /* 500px/900px */
+	display: inline;
+	margin-left: 70px;
+	}
+	
+a:link{
+		color=#FF0000;;
+		}
+		
+a:visited{
+		color=#800080;
+		}
 
-a:visited {
-	color: #00FF00;
-	text-decoration: underline;
-}
-
-a:hover, a:active, a:focus {
-	text-decoration: none;
-}
+a:hover{
+	   background: #7FFFD4;
+	   }
+	   
+a:active{
+		color=#000000;
+		}
 
 /* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
 .container {
@@ -123,9 +139,13 @@ attractions{
 
 /* ~~ miscellaneous float/clear classes ~~ */
 .fltrt {
-	float: right;
-	margin-left: 0px;
+	/*float: right;*/
+	/*margin-left: 0px;*/
 	color: #0000FF;
+	text-align: left;
+	margin-left: auto;
+	margin-right; auto;
+	
 }
 
 .fltlft {
